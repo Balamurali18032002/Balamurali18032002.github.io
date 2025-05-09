@@ -1,0 +1,109 @@
+@article{Freedman2004Efficient,
+  abstract = {We consider the problem of computing the intersection of
+private datasets of two parties, where the datasets contain lists of elements
+taken from a large domain. This problem has many applications
+for online collaboration. We present protocols, based on the use of homomorphic
+encryption and balanced hashing, for both semi-honest and
+malicious environments. For lists of length k, we obtain O(k) communication
+overhead and O(k ln ln k) computation. The protocol for the semihonest
+environment is secure in the standard model, while the protocol
+for the malicious environment is secure in the random oracle model. We
+also consider the problem of approximating the size of the intersection,
+show a linear lower-bound for the communication overhead of solving
+this problem, and provide a suitable secure protocol. Lastly, we investigate
+other variants of the matching problem, including extending the
+protocol to the multi-party setting as well as considering the problem of
+approximate matching.},
+  author = {Freedman, Michael J. and Nissim, Kobbi and Pinkas, Benny},
+  title = {Efficient Private Matching and Set Intersection},
+  booktitle = {Advances in Cryptology – EUROCRYPT 2004},
+  series = {Lecture Notes in Computer Science},
+  volume = {3027},
+  pages = {1--19},
+  publisher = {Springer},
+  year = {2004},
+  doi = {10.1007/978-3-540-24676-3_1},
+  url = {https://doi.org/10.1007/978-3-540-24676-3_1},
+  keywords = {private_matching, set_intersection, homomorphic_encryption, cryptography, privacy_preserving, type:conference}
+}
+
+
+@article{Yao1986How,
+  abstract  = {In this paper we introduce a new tool for controlling the knowledge
+transfer process in cryptographic protocol design. It is
+applied to solve a general class of problems which include most
+of the two-party cryptographic problems in the literature.
+Specifically, we show how two parties A and B can interactively generate a random integer N =p.q such that its secret, i.e., the
+prime factors (p, q), is hidden from either party individually but
+is recoverable jointly if desired. This can be utilized to give a
+protocol for two parties with private values i and j to compute
+any polynomially computable functions f(i,j) and g(i,j) with
+minimal knowledge transfer and a strong fairness property. As
+a special case, A and B can exchange a pair of secrets SA, SB,
+e.g. the factorization of an integer and a Hamiltonian circuit in
+a graph, in such a way that SA becomes computable by B when
+and only when SB becomes computable by A. All these results
+are proved assuming only that the problem of factoring large
+intergers is computationally intractable.},
+  author    = {Andrew C. Yao},
+  title     = {How to Generate and Exchange Secrets},
+  booktitle = {Proceedings of the 27th Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages     = {162--167},
+  year      = {1986},
+  publisher = {IEEE},
+  doi       = {10.1109/SFCS.1986.25},
+  url       = {https://doi.org/10.1109/SFCS.1986.25},
+  keywords  = {secure_computation, cryptography, secret_sharing, type:conference},
+}
+
+@article{Rabin2005How,
+  author       = {Michael O. Rabin},
+  title        = {How To Exchange Secrets with Oblivious Transfer},
+  booktitle = {Cryptology ePrint Archive, Paper 2005/187},
+  year         = {2005},
+  url          = {https://eprint.iacr.org/2005/187},
+  keywords     = {oblivious_transfer, secure_computation, cryptographic_protocols, privacy_preserving, type:preprint},
+  abstract     = {This foundational paper introduces the concept of Oblivious Transfer (OT), a cryptographic primitive that enables a sender to transmit one of many pieces of information to a receiver, but remains oblivious as to what was received. The protocol serves as a core building block in numerous secure computation and privacy-preserving applications, enabling secure exchange of secrets without revealing unnecessary information.}
+}
+
+@article{Chor1998Private,
+  abstract  = {Publicly accessible databases are an indispensable resource for retrieving up-to-date information. But they also pose a significant risk to the privacy of the user, since a curious database operator can follow the user’s queries and infer what the user is after. Indeed, in cases where the users’ intentions are to be kept secret, users are often cautious about accessing the database. It can be shown that when accessing a single database, to completely guarantee the privacy of the user, the whole database should be down-loaded; namely n bits should be communicated (where n is the number of bits in the database). In this work, we investigate whether by replicating the database, more efficient solutions to the private retrieval problem can be obtained. We describe schemes that enable a user to access k replicated copies of a database (k >= 2) and privately retrieve information stored in the database. This means that each individual server (holding a replicated copy of the database) gets no information on the identity of the item retrieved by the user. Our schemes use the replication to gain substantial saving. In particular, we present a two-server scheme with communication complexity O(n^(1/3)).},
+  author    = {Benny Chor and Oded Goldreich and Eyal Kushilevitz and Madhu Sudan},
+  title     = {Private Information Retrieval},
+  journal   = {Journal of the ACM},
+  volume    = {45},
+  number    = {6},
+  pages     = {965--981},
+  year      = {1998},
+  publisher = {ACM},
+  doi       = {10.1145/293347.293350},
+  url       = {https://doi.org/10.1145/293347.293350},
+  keywords  = {private_information_retrieval, information_theoretic_security, distributed_databases, privacy_preserving, type:journal},
+}
+
+@article{Pinkas2009Secure,
+  abstract  = {Secure multi-party computation has been considered by the
+cryptographic community for a number of years. Until recently it has
+been a purely theoretical area, with few implementations with which to
+test various ideas. This has led to a number of optimisations being proposed
+which are quite restricted in their application. In this paper we
+describe an implementation of the two-party case, using Yao’s garbled
+circuits, and present various algorithmic protocol improvements. These
+optimisations are analysed both theoretically and empirically, using experiments
+of various adversarial situations. Our experimental data is
+provided for reasonably large circuits, including one which performs an
+AES encryption, a problem which we discuss in the context of various
+possible applications.},
+  author    = {Benny Pinkas and Thomas Schneider and Nigel P. Smart and Stephen C. Williams},
+  title     = {Secure Two-Party Computation Is Practical},
+  booktitle = {Advances in Cryptology -- ASIACRYPT 2009},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {5912},
+  pages     = {250--267},
+  publisher = {Springer},
+  year      = {2009},
+  doi       = {10.1007/978-3-642-10366-7_15},
+  url       = {https://doi.org/10.1007/978-3-642-10366-7_15},
+  keywords  = {secure_two_party_computation, garbled_circuits, cryptographic_protocols, privacy_preserving, AES_encryption, type:conference},
+}
+
