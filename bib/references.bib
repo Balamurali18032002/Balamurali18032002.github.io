@@ -1,0 +1,261 @@
+@article{Freedman2004Efficient,
+  abstract = {We consider the problem of computing the intersection of
+private datasets of two parties, where the datasets contain lists of elements
+taken from a large domain. This problem has many applications
+for online collaboration. We present protocols, based on the use of homomorphic
+encryption and balanced hashing, for both semi-honest and
+malicious environments. For lists of length k, we obtain O(k) communication
+overhead and O(k ln ln k) computation. The protocol for the semihonest
+environment is secure in the standard model, while the protocol
+for the malicious environment is secure in the random oracle model. We
+also consider the problem of approximating the size of the intersection,
+show a linear lower-bound for the communication overhead of solving
+this problem, and provide a suitable secure protocol. Lastly, we investigate
+other variants of the matching problem, including extending the
+protocol to the multi-party setting as well as considering the problem of
+approximate matching.},
+  author = {Freedman, Michael J. and Nissim, Kobbi and Pinkas, Benny},
+  title = {Efficient Private Matching and Set Intersection},
+  booktitle = {Advances in Cryptology – EUROCRYPT 2004},
+  series = {Lecture Notes in Computer Science},
+  volume = {3027},
+  pages = {1--19},
+  publisher = {Springer},
+  year = {2004},
+  doi = {10.1007/978-3-540-24676-3_1},
+  url = {https://doi.org/10.1007/978-3-540-24676-3_1},
+  keywords = {private_matching, set_intersection, homomorphic_encryption, cryptography, privacy_preserving, type:conference}
+}
+
+
+@article{Yao1986How,
+  abstract  = {In this paper we introduce a new tool for controlling the knowledge
+transfer process in cryptographic protocol design. It is
+applied to solve a general class of problems which include most
+of the two-party cryptographic problems in the literature.
+Specifically, we show how two parties A and B can interactively generate a random integer N =p.q such that its secret, i.e., the
+prime factors (p, q), is hidden from either party individually but
+is recoverable jointly if desired. This can be utilized to give a
+protocol for two parties with private values i and j to compute
+any polynomially computable functions f(i,j) and g(i,j) with
+minimal knowledge transfer and a strong fairness property. As
+a special case, A and B can exchange a pair of secrets SA, SB,
+e.g. the factorization of an integer and a Hamiltonian circuit in
+a graph, in such a way that SA becomes computable by B when
+and only when SB becomes computable by A. All these results
+are proved assuming only that the problem of factoring large
+intergers is computationally intractable.},
+  author    = {Andrew C. Yao},
+  title     = {How to Generate and Exchange Secrets},
+  booktitle = {Proceedings of the 27th Annual Symposium on Foundations of Computer Science (FOCS)},
+  pages     = {162--167},
+  year      = {1986},
+  publisher = {IEEE},
+  doi       = {10.1109/SFCS.1986.25},
+  url       = {https://doi.org/10.1109/SFCS.1986.25},
+  keywords  = {secure_computation, cryptography, secret_sharing, type:conference}
+}
+
+@article{Rabin2005How,
+  author       = {Michael O. Rabin},
+  title        = {How To Exchange Secrets with Oblivious Transfer},
+  booktitle = {Cryptology ePrint Archive, Paper 2005/187},
+  year         = {2005},
+  url          = {https://eprint.iacr.org/2005/187},
+  keywords     = {oblivious_transfer, secure_computation, cryptographic_protocols, privacy_preserving, type:preprint}
+  abstract     = {This foundational paper introduces the concept of Oblivious Transfer (OT), a cryptographic primitive that enables a sender to transmit one of many pieces of information to a receiver, but remains oblivious as to what was received. The protocol serves as a core building block in numerous secure computation and privacy-preserving applications, enabling secure exchange of secrets without revealing unnecessary information.}
+}
+
+@article{Chor1998Private,
+  abstract  = {Publicly accessible databases are an indispensable resource for retrieving up-to-date information. But they also pose a significant risk to the privacy of the user, since a curious database operator can follow the user’s queries and infer what the user is after. Indeed, in cases where the users’ intentions are to be kept secret, users are often cautious about accessing the database. It can be shown that when accessing a single database, to completely guarantee the privacy of the user, the whole database should be down-loaded; namely n bits should be communicated (where n is the number of bits in the database). In this work, we investigate whether by replicating the database, more efficient solutions to the private retrieval problem can be obtained. We describe schemes that enable a user to access k replicated copies of a database (k >= 2) and privately retrieve information stored in the database. This means that each individual server (holding a replicated copy of the database) gets no information on the identity of the item retrieved by the user. Our schemes use the replication to gain substantial saving. In particular, we present a two-server scheme with communication complexity O(n^(1/3)).},
+  author    = {Benny Chor and Oded Goldreich and Eyal Kushilevitz and Madhu Sudan},
+  title     = {Private Information Retrieval},
+  journal   = {Journal of the ACM},
+  volume    = {45},
+  number    = {6},
+  pages     = {965--981},
+  year      = {1998},
+  publisher = {ACM},
+  doi       = {10.1145/293347.293350},
+  url       = {https://doi.org/10.1145/293347.293350},
+  keywords  = {private_information_retrieval, information_theoretic_security, distributed_databases, privacy_preserving, type:journal}
+}
+
+@article{Pinkas2009Secure,
+  abstract  = {Secure multi-party computation has been considered by the
+cryptographic community for a number of years. Until recently it has
+been a purely theoretical area, with few implementations with which to
+test various ideas. This has led to a number of optimisations being proposed
+which are quite restricted in their application. In this paper we
+describe an implementation of the two-party case, using Yao’s garbled
+circuits, and present various algorithmic protocol improvements. These
+optimisations are analysed both theoretically and empirically, using experiments
+of various adversarial situations. Our experimental data is
+provided for reasonably large circuits, including one which performs an
+AES encryption, a problem which we discuss in the context of various
+possible applications.},
+  author    = {Benny Pinkas and Thomas Schneider and Nigel P. Smart and Stephen C. Williams},
+  title     = {Secure Two-Party Computation Is Practical},
+  booktitle = {Advances in Cryptology -- ASIACRYPT 2009},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {5912},
+  pages     = {250--267},
+  publisher = {Springer},
+  year      = {2009},
+  doi       = {10.1007/978-3-642-10366-7_15},
+  url       = {https://doi.org/10.1007/978-3-642-10366-7_15},
+  keywords  = {secure_two_party_computation, garbled_circuits, cryptographic_protocols, privacy_preserving, AES_encryption, type:conference}
+}
+
+@article{Ionita2021Private,
+  abstract  = {Privacy has been more and more difficult to obtain since the development of the Internet. Private set intersection
+has been and still is a subject of great interest. In this paper we present the state of the art for PSI
+and propose four new directions for PSI protocols based on bilinear maps, secret sharing, modular inverse and
+symmetric encryption. Although our proposals are not the best in terms of efficiency, we believe that there are
+many optimizations to be done to achieve performance competitive with the best known protocols.},
+  author    = {Ionita, Andreea},
+  title     = {Private Set Intersection: Past, Present and Future},
+  booktitle = {Proceedings of the 18th International Conference on Security and Cryptography (SECRYPT)},
+  pages     = {680--685},
+  year      = {2021},
+  publisher = {SciTePress},
+  doi       = {10.5220/0010525806800685},
+  url       = {https://doi.org/10.5220/0010525806800685},
+  isbn      = {978-989-758-524-1},
+  keywords  = {private_set_intersection, cryptographic_protocols, bilinear_maps, secret_sharing, modular_inverse, symmetric_encryption, type:conference}
+}
+
+@article{Alexandru2022Private,
+  abstract  = {Anomaly detection can ensure the operational integrity
+of control systems by identifying issues such as faulty
+sensors and false data injection attacks. At the same time, we
+need privacy to protect personal data and limit the information
+attackers can get about the operation of a system. However,
+anomaly detection and privacy can sometimes be at odds, as
+monitoring the system’s behavior is impeded by data hiding.
+Cryptographic tools such as garbled circuits and homomorphic
+encryption can help, but each of these is best suited for
+certain different types of computation. Control with anomaly
+detection requires both types of computations so a naive cryptographic
+implementation might be inefficient. To address these
+challenges, we propose and implement protocols for privacypreserving
+anomaly detection in a linear control system using
+garbled circuits, homomorphic encryption, and a combination
+of the two. In doing so, we show how to distribute private computations
+between the system and the controller to reduce the
+amount of computation–in particular at the low-power system.
+Finally, we systematically compare our proposed protocols in
+terms of precision, computation, and communication costs.},
+  author    = {Andreea B. Alexandru and Luis Burbano and Mestan F. Çeliktuğ and Juanita Gomez and Alvaro A. Cárdenas},
+  title     = {Private Anomaly Detection in Linear Controllers: Garbled Circuits vs. Homomorphic Encryption},
+  booktitle = {Proceedings of the 2022 IEEE 61st Conference on Decision and Control (CDC)},
+  pages     = {7746--7753},
+  year      = {2022},
+  publisher = {IEEE},
+  doi       = {10.1109/CDC51059.2022.9992616},
+  url       = {https://doi.org/10.1109/CDC51059.2022.9992616},
+  keywords  = {anomaly_detection, privacy_preserving, garbled_circuits, homomorphic_encryption, control_systems, type:conference}
+}
+
+@article{Zahur2015Two,
+  abstract  = {The well-known classical constructions of garbled circuits
+use four ciphertexts per gate, although various methods have been proposed
+to reduce this cost. The best previously known methods for optimizing
+AND gates (two ciphertexts; Pinkas et al., ASIACRYPT 2009)
+and XOR gates (zero ciphertexts; Kolesnikov and Schneider, ICALP
+2008) were incompatible, so most implementations used the best known
+method compatible with free-XOR gates (three ciphertexts; Kolesnikov
+and Schneider, ICALP 2008). In this work we show how to simultaneously
+garble AND gates using two ciphertexts and XOR gates using zero
+ciphertexts, resulting in smaller garbled circuits than any prior scheme.
+The main idea behind our construction is to break an AND gate into
+two half-gates — AND gates for which one party knows one input. Each
+half-gate can be garbled with a single ciphertext, so our construction
+uses two ciphertexts for each AND gate while being compatible with
+free-XOR gates. The price for the reduction in size is that the evaluator
+must perform two cryptographic operations per AND gate, rather than
+one as in previous schemes. We experimentally demonstrate that our
+garbling scheme leads to an overall decrease in time (up to 25%), bandwidth
+(up to 33%), and energy use (up to 20%) over several benchmark
+applications.We show that our construction is optimal for a large class of
+garbling schemes encompassing all known practical garbling techniques.},
+  author    = {Samee Zahur and Mike Rosulek and David Evans},
+  title     = {Two Halves Make a Whole: Reducing Data Transfer in Garbled Circuits Using Half Gates},
+  booktitle = {Advances in Cryptology – EUROCRYPT 2015},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {9057},
+  pages     = {220--250},
+  publisher = {Springer},
+  year      = {2015},
+  doi       = {10.1007/978-3-662-46803-6_8},
+  url       = {https://doi.org/10.1007/978-3-662-46803-6_8},
+  keywords  = {garbled_circuits, half_gates, secure_computation, free_XOR, cryptographic_protocols, type:conference},
+}
+
+@article{Asharov2017More,
+  abstract  = {Oblivious transfer (OT) is one of the most fundamental primitives in cryptography
+and is widely used in protocols for secure two-party and multi-party computation.
+As secure computation becomes more practical, the need for practical large-scale
+OT protocols is becoming more evident. OT extensions are protocols that enable a
+relatively small number of “base-OTs” to be utilized to compute a very large number
+of OTs at low cost. In the semi-honest setting, Ishai et al. (Advances in cryptology—
+CRYPTO’03, vol 2729 of LNCS, Springer, 2003) presented an OT extension protocol
+for which the cost of each OT (beyond the base-OTs) is just a few hash function operations.
+In the malicious setting, Nielsen et al. (Advances in cryptology—CRYPTO’12,
+vol 7417 of LNCS, Springer, 2012) presented an efficient OT extension protocol for the
+setting of malicious adversaries that is secure in a random oracle model. In this work,
+we improve OT extensions with respect to communication complexity, computation
+complexity, and scalability in the semi-honest, covert, and malicious model. Furthermore,
+we show how to modify our maliciously secure OT extension protocol to achieve
+security with respect to a version of correlation robustness instead of the random oracle.
+We also provide specific optimizations of OT extensions that are tailored to the
+use of OT in various secure computation protocols such as Yao’s garbled circuits and
+the protocol of Goldreich–Micali–Wigderson, which reduce the communication complexity 
+even further.We experimentally verify the efficiency gains of our protocols and
+optimizations.},
+  author    = {Gilad Asharov and Yehuda Lindell and Thomas Schneider and Michael Zohner},
+  title     = {More Efficient Oblivious Transfer Extensions},
+  journal   = {Journal of Cryptology},
+  volume    = {30},
+  number    = {3},
+  pages     = {805--858},
+  year      = {2017},
+  publisher = {Springer},
+  doi       = {10.1007/s00145-016-9236-6},
+  url       = {https://doi.org/10.1007/s00145-016-9236-6},
+  keywords  = {oblivious_transfer, OT_extensions, secure_computation, cryptographic_protocols, semi_honest, malicious_adversaries, type:journal},
+}
+
+@article{Yadav2022Survey,
+  abstract  = {Oblivious transfer (OT) protocol is an essential tool in cryptography that provides a wide range of applications
+such as secure multi-party computation, private information retrieval, private set intersection, contract
+signing, and privacy-preserving location-based services. The OT protocol has different variants such as oneout-
+of-2, one-out-of-n, k-out-of-n, andOT extension. In theOT (one-out-of-2, one-out-of-n, andOT extension)
+protocol, the sender has a set of messages, whereas the receiver has a key. The receiver sends that key to the
+sender in a secure way; the sender cannot get any information about the received key. The sender encrypts
+every message by operating on every message using the received key and sends all the encrypted messages
+to the receiver. The receiver is able to extract only the required message using his key. However, in the kout-
+of-n OT protocol, the receiver sends a set of k keys to the sender, and in replay, the sender sends all
+the encrypted messages. The receiver uses his keys and extracts the required messages, but it cannot gain
+any information about the messages that it has not requested. Generally, the OT protocol requires high communication
+and computation cost if we transfer millions of oblivious messages. The OT extension protocol
+provides a solution for this, where the receiver transfers a set of keys to the sender by executing a few numbers
+of OT protocols. Then, the sender encrypts all the messages using cheap symmetric key cryptography
+with the help of a received set of keys and transfers millions of oblivious messages to the receiver. In this
+work, we present different variants of OT protocols such as one-out-of-2, one-out-of-n, k-out-of-n, and OT
+extension. Furthermore, we cover various aspects of theoretical security guarantees such as semi-honest and
+malicious adversaries, universally composable, used techniques, computation, and communication efficiency
+aspects. From the analysis, we found that the semi-honest adversary-based OT protocols required low communication
+and computation costs as compared to malicious adversary-based OT protocols.},
+  author    = {Vijay Kumar Yadav and Nitish Andola and Shekhar Verma and S. Venkatesan},
+  title     = {A Survey of Oblivious Transfer Protocol},
+  journal   = {ACM Computing Surveys},
+  volume    = {54},
+  number    = {10s},
+  pages     = {211:1--211:37},
+  year      = {2022},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3503045},
+  url       = {https://doi.org/10.1145/3503045},
+  keywords  = {oblivious_transfer, secure_multi_party_computation, private_information_retrieval, private_set_intersection, contract_signing, privacy_preserving, protocol_variants, type:survey},
+}
